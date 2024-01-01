@@ -1,10 +1,14 @@
 package ro.shum;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import java.io.Serializable;
 
 public class Person implements Serializable {
 
+  @JsonProperty
   private String name;
+
+  @JsonProperty
   private int age;
 
 
