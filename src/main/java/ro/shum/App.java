@@ -14,7 +14,7 @@ public class App {
     person.setName("John");
     person.setAge(25);
 
-    // Сериализация и десериализация с использованием Jackson
+    // Сериализация и десериализация с использованием Jackson.
     ObjectMapper objectMapper = new ObjectMapper();
     String json = objectMapper.writeValueAsString(person);
     Person deserializedPerson = objectMapper.readValue(json, Person.class);
